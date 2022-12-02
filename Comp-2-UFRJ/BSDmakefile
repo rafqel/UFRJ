@@ -1,0 +1,669 @@
+#
+# Universidade Federal do Rio de Janeiro
+# Escola Politecnica
+# Departamento de Eletronica e de Computacao
+# EEL270 - Computacao II - Turma 2021/1
+# Prof. Marcelo Luiz Drumond Lanza
+#
+# Autor: Rafael Alves de Jesus
+# Descricao: <descricao sucinta sobre o programa>
+#
+# $Author: rafael.jesus $
+# $Date: 2021/10/12 20:17:56 $
+# $Log: BSDmakefile,v $
+# Revision 1.51  2021/10/12 20:17:56  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Adicao de macros e objetivos referente a aula0907.
+#
+# Revision 1.50  2021/10/12 19:46:30  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Adicao de macros e objetivos referente ao programa de testes aula0906.
+#
+# Revision 1.49  2021/10/12 18:35:12  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1
+# Inclusao de macros e objetivos referente a aula0905.
+#
+# Revision 1.48  2021/10/12 15:13:17  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Atualizacao de macros.
+#
+# Revision 1.47  2021/10/10 19:51:53  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Inclusao de macros e objetivos referente a funcao ExibirConteudoArquivo.
+#
+# Revision 1.46  2021/10/02 08:40:28  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Correcao de macro.
+#
+# Revision 1.45  2021/10/02 08:35:13  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Adicao de macros e objetivos da funcao DecodificarBase64.
+#
+# Revision 1.44  2021/10/01 17:19:23  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Inclusao das macros e objetivos da funcao CodificarBase64.
+#
+# Revision 1.43  2021/09/30 03:21:41  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Incremento das macros e objetivos referente a aula0803.
+#
+# Revision 1.42  2021/09/29 21:45:36  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Adicao de macros e objetivos referente a aula0802.
+#
+# Revision 1.41  2021/09/21 03:31:22  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Incremento de macros e objetivos referente ao programa de testes aula0706.
+#
+# Revision 1.40  2021/09/20 05:33:41  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Adicao de macros e objetivos referente a aula0705.
+#
+# Revision 1.39  2021/09/19 22:44:29  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Inclusao das macros e objetivos referente a aula0704.
+#
+# Revision 1.38  2021/09/18 08:01:52  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Inclusao de macros e objetivos referente a aula0703.
+#
+# Revision 1.37  2021/09/18 00:16:47  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Incrementacao de macros e objetivos referente a aula0702.
+#
+# Revision 1.36  2021/09/08 20:03:03  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Adicao de macros e objetivos referente a aula0606.
+#
+# Revision 1.35  2021/09/08 19:43:49  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Adicao de macros e objetivos referente a aula0605.
+#
+# Revision 1.34  2021/09/08 18:21:58  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Implementacao das macros e objetivos da aula0604.
+#
+# Revision 1.33  2021/09/01 14:05:27  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Inclusao de macros e objetivos referente a aula0603.
+#
+# Revision 1.32  2021/09/01 01:58:25  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Adicao de macros e objetivos da aula0602.
+#
+# Revision 1.31  2021/08/28 02:47:25  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Incremento de macros e objetivos referentes a aula0506a e aula0506b.
+#
+# Revision 1.30  2021/08/28 02:24:27  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Inclusao de macros e objetivos da aula0505b.
+#
+# Revision 1.29  2021/08/28 02:00:06  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Incremento das macros e objetivos referente a aula0505a.
+#
+# Revision 1.28  2021/08/27 19:15:11  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Inclusao das macros e objetivos da aula0503b.
+#
+# Revision 1.27  2021/08/27 18:37:58  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Inclusao das macros e objetivos referente a aula0503a.
+#
+# Revision 1.26  2021/08/27 14:58:26  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Adicao de macros e objetivos referente a aula0502b.
+#
+# Revision 1.25  2021/08/25 18:37:37  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Adicao das macros e objetivos referente a aula05.
+#
+# Revision 1.24  2021/08/23 13:25:59  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Correcao da macro DIALECT para ingles.
+#
+# Revision 1.23  2021/08/21 01:59:44  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Adicao da macro e objetivo da aula0403e.
+#
+# Revision 1.22  2021/08/21 00:05:41  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Adicao de macros e objetivos referente a aula0403d.
+#
+# Revision 1.21  2021/08/20 23:52:21  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Adicao de macros e objetivos referente a aula0403c.
+#
+# Revision 1.20  2021/08/20 23:35:02  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Inclusao das macros e objetivos referente a aula0403b.
+#
+# Revision 1.19  2021/08/20 22:22:58  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Adicao do protótipo da função CalcularSerieHarmonicaAlternada.
+#
+# Revision 1.18  2021/08/18 00:20:22  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.17  2021/08/18 00:09:25  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.16  2021/08/17 23:48:07  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.15  2021/08/17 21:05:32  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.14  2021/08/10 22:28:48  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.13  2021/08/10 22:10:37  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.12  2021/08/10 21:51:45  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.11  2021/08/10 21:18:19  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.10  2021/08/06 21:23:49  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.9  2021/08/06 19:29:42  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.8  2021/08/06 19:14:41  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.7  2021/08/06 14:54:04  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.6  2021/08/06 00:08:54  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.5  2021/08/03 23:33:13  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.4  2021/08/03 21:03:17  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.3  2021/08/03 20:44:50  rafael.jesus
+# EEL270 - Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.2  2021/08/03 19:40:07  rafael.jesus
+# EEL270 Computacao II - Turma 2021/1.
+# Arquivo de dependencias.
+#
+# Revision 1.1  2021/07/29 17:16:30  rafael.jesus
+# Initial revision
+#
+#
+#
+
+OS = `uname -s`
+
+CC = gcc
+
+.ifdef CLANG
+CC = clang
+.endif
+
+LD = $(CC)
+
+DIALECT = ansi
+STANDARD = -ansi
+
+.ifdef C89
+DIALECT = c89
+STANDARD = -std=c89
+.elif C99
+DIALECT = c99
+STANDARD = -std=c99
+.elif C11
+DIALECT = c11
+STANDARD = -std=c11
+.endif
+
+DEBUG =
+
+.ifdef DEPURACAO
+DEBUG = -DDEPURACAO
+.endif
+
+CFLAGS = -Wall $(STANDARD) $(DEBUG)
+LFLAGS = -Wall
+
+AULA0101OBJS = aula0101.o
+AULA0102OBJS = aula0102.o
+AULA0103OBJS = aula0103.o
+AULA0104OBJS = aula0104.o
+AULA0105OBJS = aula0105.o
+AULA0202AOBJS = aula0201a.o aula0202.o
+AULA0202BOBJS = aula0201b.o aula0202.o
+AULA0202COBJS = aula0201c.o aula0202.o
+AULA0202DOBJS = aula0201d.o aula0202.o
+AULA0302AOBJS = aula0301a.o aula0302.o
+AULA0302BOBJS = aula0301b.o aula0302.o
+AULA0302COBJS = aula0301c.o aula0302.o
+AULA0302DOBJS = aula0301d.o aula0302.o
+AULA0402AOBJS = aula0401a.o aula0402.o
+AULA0402BOBJS = aula0401b.o aula0402.o
+AULA0402COBJS = aula0401c.o aula0402.o
+AULA0402DOBJS = aula0401d.o aula0402.o
+AULA0404AOBJS = aula0403a.o aula0401a.o aula0404.o libmatematicarecursao.a
+AULA0404BOBJS = aula0403b.o aula0401b.o aula0404.o libmatematicadowhile.a
+AULA0404COBJS = aula0403c.o aula0401c.o aula0404.o libmatematicafor.a
+AULA0404DOBJS = aula0403d.o aula0401d.o aula0404.o libmatematicawhile.a
+AULA0404EOBJS = aula0403e.o aula0404.o
+AULA0502AOBJS = aula0502a.o aula0501.o
+AULA0502BOBJS = aula0502b.o aula0501.o
+AULA0503AOBJS = aula0503a.o aula0501.o
+AULA0503BOBJS = aula0503b.o aula0501.o
+AULA0505AOBJS = aula0505a.o aula0504.o
+AULA0505BOBJS = aula0505b.o aula0504.o
+AULA0506AOBJS = aula0506a.o aula0504.o
+AULA0506BOBJS = aula0506b.o aula0504.o
+AULA0602OBJS = aula0602.o aula0601.o
+AULA0603OBJS = aula0603.o aula0601.o
+AULA0604OBJS = aula0604.o aula0601.o
+AULA0605OBJS = aula0605.o aula0601.o
+AULA0606OBJS = aula0606.o aula0601.o
+AULA0702OBJS = aula0702.o
+AULA0703OBJS = aula0703.o
+AULA0704OBJS = aula0704.o
+AULA0705OBJS = aula0705.o
+AULA0706OBJS = aula0706.o
+AULA0802OBJS = aula0802.o
+AULA0803OBJS = aula0803.o
+AULA0806OBJS = aula0806.o
+AULA0807OBJS = aula0807.o
+AULA0902OBJS = aula0902.o
+AULA0903OBJS = aula0903.o
+AULA0904OBJS = aula0904.o
+AULA0905OBJS = aula0905.o
+AULA0906OBJS = aula0906.o
+AULA0907OBJS = aula0907.o
+
+AULA01 = aula0101\
+				aula0102\
+				aula0103\
+				aula0104\
+				aula0105
+
+AULA02 = aula0202a\
+				aula0202b\
+				aula0202c\
+				aula0202d
+
+AULA03 = aula0302a\
+				aula0302b\
+				aula0302c\
+				aula0302d
+
+AULA04 = aula0402a\
+				aula0402b\
+				aula0402c\
+				aula0402d\
+				aula0404a\
+				aula0404b\
+				aula0404c\
+				aula0404d\
+				aula0404e
+
+AULA05 = aula0502a\
+				aula0502b\
+				aula0503a\
+				aula0503b\
+				aula0505a\
+				aula0505b\
+				aula0506a\
+				aula0506b
+
+AULA06 = aula0602\
+				aula0603\
+				aula0604\
+				aula0605\
+				aula0606
+
+AULA07 = aula0702\
+				aula0703\
+				aula0704\
+				aula0705\
+				aula0706
+
+AULA08 = aula0802\
+				aula0803\
+				aula0806\
+				aula0807
+
+AULA09 = aula0902\
+				aula0903\
+				aula0904\
+				aula0905\
+				aula0906\
+				aula0907
+
+EXECS = $(AULA01)\
+				$(AULA02)\
+				$(AULA03)\
+				$(AULA04)\
+				$(AULA05)\
+				$(AULA06)\
+				$(AULA07)\
+				$(AULA08)\
+				$(AULA09)
+
+LIBMATEMATICAOBJS = aula0601.o
+LIBMATEMATICARECURSAOOBJS = aula0201a.o aula0301a.o aula0401a.o aula0403a.o
+LIBMATEMATICADOWHILEOBJS = aula0201b.o aula0301b.o aula0401b.o aula0403b.o
+LIBMATEMATICAFOROBJS = aula0201c.o aula0301c.o aula0401c.o aula0403c.o
+LIBMATEMATICAWHILEOBJS = aula0201d.o aula0301d.o aula0401d.o aula0403d.o
+LIBMONITOROBJS = aula0701.o
+LIBBASEOBJS = aula0801.o
+LIBARQUIVOSOBJS = aula0901.o
+
+LIBMATEMATICA = libmatematica.a
+LIBMATEMATICARECURSAO = libmatematicarecursao.a 
+LIBMATEMATICADOWHILE = libmatematicadowhile.a
+LIBMATEMATICAFOR = libmatematicafor.a
+LIBMATEMATICAWHILE = libmatematicawhile.a
+LIBMONITOR = libmonitor.a
+LIBBASE= libbase.a
+LIBARQUIVOS = libarquivos.a
+
+LIBS = $(LIBMATEMATICARECURSAO)\
+			$(LIBMATEMATICADOWHILE)\
+			$(LIBMATEMATICAFOR)\
+			$(LIBMATEMATICAWHILE)\
+			$(LIBMATEMATICA)\
+			$(LIBMONITOR)\
+			$(LIBBASE)\
+			$(LIBARQUIVOS)
+
+ALL = $(EXECS) $(LIBS)
+
+# Regra Implicita
+.c.o:
+	$(CC) $(CFLAGS) -c $<
+
+all: $(ALL)
+
+aula0101: $(AULA0101OBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0101OBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0102: $(AULA0102OBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0102OBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0103: $(AULA0103OBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0103OBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0104: $(AULA0104OBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0104OBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0105: $(AULA0105OBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0105OBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0202a: $(AULA0202AOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0202AOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0202b: $(AULA0202BOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0202BOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0202c: $(AULA0202COBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0202COBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0202d: $(AULA0202DOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0202DOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0302a: $(AULA0302AOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0302AOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0302b: $(AULA0302BOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0302BOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0302c: $(AULA0302COBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0302COBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0302d: $(AULA0302DOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0302DOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0402a: $(AULA0402AOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0402AOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0402b: $(AULA0402BOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0402BOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0402c: $(AULA0402COBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0402COBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0402d: $(AULA0402DOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0402DOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0404a: $(AULA0404AOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0404AOBJS) -L. -lmatematicarecursao
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0404b: $(AULA0404BOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0404BOBJS) -L. -lmatematicadowhile
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0404c: $(AULA0404COBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0404COBJS) -L. -lmatematicafor
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0404d: $(AULA0404DOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0404DOBJS) -L. -lmatematicawhile
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0404e: $(AULA0404EOBJS)
+	$(LD) $(LFLAGS) -lm -o $@ $(AULA0404EOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0502a: $(AULA0502AOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0502AOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0502b: $(AULA0502BOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0502BOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0503a: $(AULA0503AOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0503AOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0503b: $(AULA0503BOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0503BOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0505a: $(AULA0505AOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0505AOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0505b: $(AULA0505BOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0505BOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0506a: $(AULA0506AOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0506AOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0506b: $(AULA0506BOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0506BOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0602: $(AULA0602OBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0602OBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0603: $(AULA0603OBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0603OBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0604: $(AULA0604OBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0604OBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0605: $(AULA0605OBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0605OBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0606: $(AULA0606OBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0606OBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0702: $(AULA0702OBJS) $(LIBMONITOR)
+	$(LD) $(LFLAGS) -o $@ $(AULA0702OBJS) -L. -lmonitor
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0703: $(AULA0703OBJS) $(LIBMONITOR)
+	$(LD) $(LFLAGS) -o $@ $(AULA0703OBJS) -L. -lmonitor
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0704: $(AULA0704OBJS) $(LIBMONITOR)
+	$(LD) $(LFLAGS) -o $@ $(AULA0704OBJS) -L. -lmonitor
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0705: $(AULA0705OBJS) $(LIBMONITOR)
+	$(LD) $(LFLAGS) -o $@ $(AULA0705OBJS) -L. -lmonitor
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0706: $(AULA0706OBJS) $(LIBMONITOR)
+	$(LD) $(LFLAGS) -o $@ $(AULA0706OBJS) -L. -lmonitor
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0802: $(AULA0802OBJS) $(LIBBASE)
+	$(LD) $(LFLAGS) -o $@ $(AULA0802OBJS) -L. -lbase
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0803: $(AULA0803OBJS) $(LIBBASE)
+	$(LD) $(LFLAGS) -o $@ $(AULA0803OBJS) -L. -lbase
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0806: $(AULA0806OBJS) $(LIBBASE)
+	$(LD) $(LFLAGS) -o $@ $(AULA0806OBJS) -L. -lbase
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0807: $(AULA0807OBJS) $(LIBBASE)
+	$(LD) $(LFLAGS) -o $@ $(AULA0807OBJS) -L. -lbase
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0902: $(AULA0902OBJS) $(LIBARQUIVOS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0902OBJS) -L. -larquivos
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0903: $(AULA0903OBJS) $(LIBARQUIVOS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0903OBJS) -L. -larquivos
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0904: $(AULA0904OBJS) $(LIBARQUIVOS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0904OBJS) -L. -larquivos
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0905: $(AULA0905OBJS) $(LIBARQUIVOS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0905OBJS) -L. -larquivos
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0906: $(AULA0906OBJS) $(LIBARQUIVOS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0906OBJS) -L. -larquivos
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+aula0907: $(AULA0907OBJS) $(LIBARQUIVOS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0907OBJS) -L. -larquivos
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALECT)
+
+
+libmatematicarecursao.a: $(LIBMATEMATICARECURSAOOBJS)
+	ar -r -c $@ $(LIBMATEMATICARECURSAOOBJS)
+
+libmatematicadowhile.a: $(LIBMATEMATICADOWHILEOBJS)
+	ar -r -c $@ $(LIBMATEMATICADOWHILEOBJS)
+
+libmatematicafor.a: $(LIBMATEMATICAFOROBJS)
+	ar -r -c $@ $(LIBMATEMATICAFOROBJS)
+
+libmatematicawhile.a: $(LIBMATEMATICAWHILEOBJS)
+	ar -r -c $@ $(LIBMATEMATICAWHILEOBJS)
+
+libmatematica.a: $(LIBMATEMATICAOBJS)
+	ar -r -c $@ $(LIBMATEMATICAOBJS)
+
+libmonitor.a: $(LIBMONITOROBJS)
+	ar -r -c $@ $(LIBMONITOROBJS)
+
+libbase.a: $(LIBBASEOBJS)
+	ar -r -c $@ $(LIBBASEOBJS)
+
+libarquivos.a: $(LIBARQUIVOSOBJS)
+	ar -r -c $@ $(LIBARQUIVOSOBJS)
+
+
+.PHONY: clean-all clean clean-objs clean-bsd clean-linux clean-gcc clean-clang clean-ansi clean-c89 clean-c99 clean-c11
+
+clean-all:
+	rm -f *.o $(ALL) *-FreeBSD-* *-Linux-* *.core
+
+clean:
+	rm -f *.o $(ALL) *.core
+
+clean-objs:
+	rm -f *.o *.core
+
+clean-bsd:
+	rm -f *.o $(ALL) *-FreeBSD-* *.core
+
+clean-linux:
+	rm -f *.o $(ALL) *-Linux-* *.core
+
+clean-gcc:
+	rm -f *.o $(ALL) *-gcc-* *.core
+
+clean-clang:
+	rm -f *.o $(ALL) *-clang-* *.core
+
+clean-ansi:
+	rm -f *.o $(ALL) *-ansi *.core
+
+clean-c89:
+	rm -f *.o $(ALL) *-c89 *.core
+
+clean-c99:
+	rm -f *.o $(ALL) *-c99 *.core
+
+clean-c11:
+	rm -f *.o $(ALL) *-c11 *.core
+
+# $RCSfile: BSDmakefile,v $ 
